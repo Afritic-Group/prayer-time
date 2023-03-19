@@ -1,0 +1,7 @@
+{
+  "hosting": {
+    "public": "public",
+    "site": "prayer-time-e62e9",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}

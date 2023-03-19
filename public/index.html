@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Prayer Time - Adhan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Keywords" content="HTML, CSS, JavaScript, Demos, Adhan, Time, Prayer">
+  <meta name="Description" content="Code example of how a Prayer Time Application works">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" type="image/png" href="favicon.ico">
+</head>
+
+<body>
+  <header>
+    <img src="./assets/images/moskpng.png" alt="Mosk Adhan" class="mosk-athan">
+    <h1>Prayer Time - Adhan</h1>
+  </header>
+  <section class="content">
+    <div id="clock" class="clock"></div>
+    <label for="playTime" class="label-set-time">Set Prayer time:</label>
+    <input type="datetime-local" id="playTime" onchange="setPlayTime()" class="input-set-time">
+    <button id="btnSetTime" class="btn-set-time">Set Time</button>
+  </section>
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/clock.js"></script>
+</body>
+
+</html>

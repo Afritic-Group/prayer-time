@@ -1,0 +1,43 @@
+header,
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mosk-athan {
+  max-width: 200px;
+}
+
+.content {
+  gap: 1rem;
+}
+
+.clock {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: monospace;
+  color: #00449f;
+}
+
+.label-set-time {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.input-set-time {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 2px solid #00449f;
+  font-size: 1.2rem;
+}
+
+.btn-set-time {
+  padding: 1rem 4rem;
+  border-radius: 5px;
+  background-color: #00449f;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
