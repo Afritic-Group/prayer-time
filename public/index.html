@@ -18,9 +18,32 @@
   </header>
   <section class="content">
     <div id="clock" class="clock"></div>
-    <label for="playTime" class="label-set-time">Set Prayer time:</label>
-    <input type="datetime-local" id="playTime" onchange="setPlayTime()" class="input-set-time">
-    <button id="btnSetTime" class="btn-set-time">Set Time</button>
+    <section>
+      <label for="playTime" class="label-set-time">Set Prayer time:</label>
+      <form id="formSetTime" class="prayer-times">
+        <div class="prayer-time">
+          <label for="fajrTime" class="prayer-name">Fajr</label>
+          <input type="time" id="fajrTime" onchange="setPlayTime('fajrTime')" class="input-set-time" required>
+        </div>
+        <div class="prayer-time">
+          <label for="dhuhrTime" class="prayer-name">Dhuhr</label>
+          <input type="time" id="dhuhrTime" onchange="setPlayTime('dhuhrTime')" class="input-set-time" required>
+        </div>
+        <div class="prayer-time">
+          <label for="asrTime" class="prayer-name">Asr</label>
+          <input type="time" id="asrTime" onchange="setPlayTime('asrTime')" class="input-set-time" required>
+        </div>
+        <div class="prayer-time">
+          <label for="maghribTime" class="prayer-name">Maghrib</label>
+          <input type="time" id="maghribTime" onchange="setPlayTime('maghribTime')" class="input-set-time" required>
+        </div>
+        <div class="prayer-time">
+          <label for="ishaTime" class="prayer-name">Isha</label>
+          <input type="time" id="ishaTime" onchange="setPlayTime('ishaTime')" class="input-set-time" required>
+        </div>
+        <button id="btnSetTime" class="btn-set-time">Save</button>
+      </form>
+    </section>
   </section>
   <script src="./assets/js/app.js"></script>
   <script src="./assets/js/clock.js"></script>

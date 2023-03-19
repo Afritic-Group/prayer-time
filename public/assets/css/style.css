@@ -23,6 +23,8 @@ header,
 .label-set-time {
   font-size: 1.5rem;
   font-weight: 600;
+  margin-bottom: 1rem;
+  display: inline-block;
 }
 
 .input-set-time {
@@ -40,4 +42,39 @@ header,
   color: white;
   font-size: 1.2rem;
   cursor: pointer;
+  margin-block: 1rem;
+}
+
+.prayer-times {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.prayer-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prayer-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.speaker-on {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/speaker.png);
+  width: 90px;
+  height: 75px;
+}
+
+.saved {
+  background-color: #009688;
 }
