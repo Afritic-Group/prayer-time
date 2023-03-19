@@ -11,7 +11,13 @@ function updateTime() {
   minutes = minutes.toString().length < 2 ? `0${minutes}` : minutes;
   seconds = seconds.toString().length < 2 ? `0${seconds}` : seconds;
 
-  const timeString = `${hours}:${minutes}:${seconds}`;
+  let ampm = hours < 12 ? "AM" : "PM";
+
+  if (hours > 12) {
+    hours -= 12;
+  }
+
+  const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
 
   // display the time on the page
   document.getElementById("clock").innerHTML = timeString;
